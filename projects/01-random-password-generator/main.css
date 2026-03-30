@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+  --jet-black: #2c363f;
+  --charcoal-blue: #3a4754;
+  --crayola-blue: #3772ff;
+  --electric-green: #5ef550;
+  --dark-emerald: #2d6826;
+  --strawberry-red: #f55151;
+  --bitter-chocolate: #692727;
+  --inter: "Inter", sans-serif;
+  --jetbrains-mono: "JetBrains Mono", monospace;
+
+  --bg-body: var(--jet-black);
+  --bg-card: var(--charcoal-blue);
+  --accent-primary: var(--crayola-blue);
+  --color-success: var(--electric-green);
+  --color-failed: var(--strawberry-red);
+  --text-on-success: var(--dark-emerald);
+  --text-on-failed: var(--bitter-chocolate);
+  --text-main: #ffffff;
+  --text-placeholder: #99a3ad;
+  --font-main: var(--inter);
+  --font-code: var(--jetbrains-mono);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-card {
+  background-color: var(--bg-card);
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.password-card__title {
+  font-family: var(--font-main);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.password-card__display {
+  color: var(--text-main);
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+.password-card__input {
+  background-color: transparent;
+  color: var(--text-main);
+  font-family: var(--font-code);
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--accent-primary);
+  outline: none;
+  padding: 10px;
+  padding-right: 40px;
+}
+.password-card__input::placeholder {
+  color: var(--text-placeholder);
+  opacity: 1;
+}
+.password-card__input::-ms-input-placeholder {
+  color: var(--text-placeholder);
+}
+.password-card__btn {
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.password-card__btn--copy {
+  background-color: var(--bg-card);
+  border: 2px solid var(--accent-primary);
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.password-card__btn--generate {
+  background-color: var(--accent-primary);
+  border: none;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.alert-card {
+  width: max-content;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: 10;
+  translate: -50%;
+  opacity: 0;
+  scale: 0;
+  transition:
+    opacity 0.1s linear,
+    scale 0.1s linear;
+}
+.alert-card.active {
+  opacity: 1;
+  scale: 1;
+}
+.alert-card.success {
+  background-color: var(--color-success);
+}
+.alert-card.failed {
+  background-color: var(--color-failed);
+}
+.alert-card__message {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.alert-card.success .alert-card__message {
+  color: var(--text-on-success);
+}
+.alert-card.failed .alert-card__message {
+  color: var(--text-on-failed);
+}
+
+@media (min-width: 768px) {
+  .password-card {
+    max-width: 540px;
+  }
+
+  .alert-card {
+    top: 40px;
+  }
+}
