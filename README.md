@@ -1,0 +1,27 @@
+# 🚀 20 Web Projects: HTML, CSS, & JavaScript
+
+A curated collection of 20 web projects designed to master Front-End Development fundamentals through hands-on, project-based learning.
+
+The goal of this repository is to move beyond basic tutorials and implement industry-standard practices in every build.
+
+## 📌 Project Roadmap
+
+| No  | Project Name                                                          | Status       | Live Demo                                                                                           |
+| --- | --------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
+| 01  | [Random Password Generator](./projects/01-random-password-generator/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/) |
+| 02  | Sleek Dark Mode Toggle                                                | ⏳ Upcoming  | -                                                                                                   |
+| 03  | Blur Pop-Up Window                                                    | ⏳ Upcoming  | -                                                                                                   |
+
+---
+
+## 🛠️ Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ilhamjkid/vanilla-js-projects.git
+   ```
+2. Navigate to the specific project folder and open index.html in your browser.
+
+## 👤 Author
+
+**Ilham Jaya Kusuma** - Full-Stack Developer
