@@ -9,7 +9,7 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | No  | Project Name                                                          | Status       | Live Demo                                                                                           |
 | --- | --------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
 | 01  | [Random Password Generator](./projects/01-random-password-generator/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/) |
-| 02  | Sleek Dark Mode Toggle                                                | ⏳ Upcoming  | -                                                                                                   |
+| 02  | [Sleek Dark Mode Toggle](./projects/02-sleek-dark-mode-toggle/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/02-sleek-dark-mode-toggle/)    |
 | 03  | Blur Pop-Up Window                                                    | ⏳ Upcoming  | -                                                                                                   |
 
 ---
