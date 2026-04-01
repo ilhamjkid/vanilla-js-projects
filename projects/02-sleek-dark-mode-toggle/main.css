@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-main: "Poppins", sans-serif;
+}
+html:root {
+  --primary-color: #ffe74c;
+  --bg-body: #e4e6e9;
+  --bg-section: #f9fafc;
+  --bg-button: #e4e6e9;
+  --bg-button-active: #f9fafc;
+  --shadow-color: #191c224d;
+  --text-main: #14151a;
+  --text-secondary: #36383f;
+}
+html.dark:root {
+  --primary-color: #4d73ff;
+  --bg-body: #393d45;
+  --bg-section: #2a2d34;
+  --bg-button: #191c22;
+  --bg-button-active: #393d45;
+  --shadow-color: #191c22e6;
+  --text-main: #fff;
+  --text-secondary: #bdbdbd;
+}
+
+html .dark-mode-toggle__logo--light {
+  scale: 1;
+}
+html .dark-mode-toggle__logo--dark {
+  scale: 0;
+}
+html.dark .dark-mode-toggle__logo--light {
+  scale: 0;
+}
+html.dark .dark-mode-toggle__logo--dark {
+  scale: 1;
+}
+
+body,
+section,
+.dark-mode-toggle__btn,
+.dark-mode-toggle__btn--mode,
+.dark-mode-toggle__title,
+.dark-mode-toggle__desc {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-body);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.dark-mode-toggle {
+  background-color: var(--bg-section);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px var(--shadow-color);
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.dark-mode-toggle__logo {
+  fill: var(--primary-color);
+  width: 100%;
+  height: 200px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.dark-mode-toggle__logo--light,
+.dark-mode-toggle__logo--dark {
+  width: auto;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  transition: scale 0.3s ease-in-out;
+}
+
+.dark-mode-toggle__btn {
+  background-color: var(--bg-button);
+  height: 44px;
+  margin: 20px auto 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dark-mode-toggle__btn--mode {
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 30px;
+}
+.dark-mode-toggle__btn--mode.active {
+  background-color: var(--bg-button-active);
+  color: var(--text-main);
+  box-shadow: 0px 0px 4px 2px var(--shadow-color);
+}
+.dark-mode-toggle__btn--mode:hover {
+  color: var(--text-main);
+}
+
+.dark-mode-toggle__title {
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.dark-mode-toggle__desc {
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  font-weight: 600;
+}
