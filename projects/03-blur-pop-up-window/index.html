@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+  <title>Blur Pop-Up Window</title>
+</head>
+
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="hero__content">
+        <h2 class="hero__title">Welcome to our website</h2>
+        <p class="hero__desc">Join our community to get the latest updates!</p>
+        <button class="hero__open-btn">Click to join</button>
+      </div>
+    </header>
+  </main>
+
+  <div class="pop-up-window hidden">
+    <div class="pop-up-window__modal">
+      <button class="pop-up-window__close-btn" aria-label="Close popup">&times;</button>
+      <form class="pop-up-window__form">
+        <div class="pop-up-window__field">
+          <label for="email" class="pop-up-window__label">Your Email</label>
+          <input type="email" name="email" id="email" class="pop-up-window__input" placeholder="my-name@example.com"
+            required>
+        </div>
+        <button type="submit" class="pop-up-window__submit-btn">Join Now</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

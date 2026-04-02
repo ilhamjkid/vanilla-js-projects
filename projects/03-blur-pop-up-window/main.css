@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-main: "Poppins", sans-serif;
+  --bright-indigo: #052dff;
+  --gold: #ffd205;
+  --black04: #00000066;
+
+  --accent-primary: var(--bright-indigo);
+  --accent-secondary: var(--gold);
+  --accent-light: white;
+  --accent-dark: black;
+  --shadow-focus: var(--black04);
+  --bg-overlay: var(--black04);
+  --bg-modal: white;
+  --text-main: black;
+  --text-on-accent: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  color: var(--text-main);
+  font-family: var(--font-main);
+}
+input:focus-visible,
+button:focus-visible {
+  box-shadow: 0px 0px 0px 4px var(--shadow-focus);
+}
+button:hover {
+  animation: scale-btn 0.3s ease-in-out;
+}
+@keyframes scale-btn {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.container {
+  transition:
+    filter 0.3s ease-in-out,
+    scale 0.3s ease-in-out;
+}
+.container.hidden {
+  filter: blur(4px);
+  scale: 1.05;
+}
+
+.hero {
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 50, 0.8) 0%,
+      rgba(0, 0, 100, 0.6) 50%,
+      rgba(0, 0, 150, 0.4) 100%
+    ),
+    url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.hero__content {
+  color: var(--text-on-accent);
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+}
+.hero__title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero__desc {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+.hero__open-btn {
+  background-color: var(--accent-secondary);
+  color: var(--text-main);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid var(--accent-light);
+  cursor: pointer;
+}
+
+.pop-up-window {
+  background-color: var(--bg-overlay);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  inset: 0;
+  transition: translate 0.3s ease-in-out;
+}
+.pop-up-window.hidden {
+  translate: 0 -100%;
+}
+.pop-up-window__modal {
+  background-color: var(--bg-modal);
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+.pop-up-window__close-btn {
+  background-color: transparent;
+  color: var(--text-main);
+  font-size: 2.4rem;
+  display: block;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+.pop-up-window__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.pop-up-window__label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.pop-up-window__input {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid var(--accent-dark);
+}
+.pop-up-window__submit-btn {
+  background-color: var(--accent-primary);
+  color: var(--text-on-accent);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid var(--accent-primary);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    max-width: 840px;
+  }
+}
