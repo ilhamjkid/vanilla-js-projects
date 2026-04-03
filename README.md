@@ -6,13 +6,13 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 
 ## 📌 Project Roadmap
 
-| No  | Project Name                                                          | Status       | Live Demo                                                                                           |
-| --- | --------------------------------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
-| 01  | [Random Password Generator](./projects/01-random-password-generator/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/) |
-| 02  | [Sleek Dark Mode Toggle](./projects/02-sleek-dark-mode-toggle/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/02-sleek-dark-mode-toggle/)    |
-| 03  | [Blur Pop-Up Window](./projects/03-blur-pop-up-window/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/03-blur-pop-up-window/)        |
-| 04  | Simple Weight Converter App                                           | ⏳ Upcoming  | -                                                                                                   |
-| 05  | Button Ripple Effect                                                  | ⏳ Upcoming  | -                                                                                                   |
+| No  | Project Name                                                              | Status       | Live Demo                                                                                            |
+| --- | ------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------- |
+| 01  | [Random Password Generator](./projects/01-random-password-generator/)     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/)  |
+| 02  | [Sleek Dark Mode Toggle](./projects/02-sleek-dark-mode-toggle/)           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/02-sleek-dark-mode-toggle/)     |
+| 03  | [Blur Pop-Up Window](./projects/03-blur-pop-up-window/)                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/03-blur-pop-up-window/)         |
+| 04  | [Simple Weight Converter App](./projects/04-simple-weight-converter-app/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/04-simple-weight-converter-app) |
+| 05  | Button Ripple Effect                                                      | ⏳ Upcoming  | -                                                                                                    |
 
 ---
 
