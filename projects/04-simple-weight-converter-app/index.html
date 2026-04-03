@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+  <title>Simple Weight Converter App</title>
+</head>
+
+<body>
+  <main>
+    <section class="weight-converter">
+      <h2 class="weight-converter__title">Weight Converter</h2>
+      <form class="weight-converter__form">
+        <label for="pounds" class="weight-converter__label">Pounds:</label>
+        <input type="number" name="pounds" id="pounds" class="weight-converter__input" placeholder="0">
+      </form>
+      <p class="weight-converter__failed-message hidden">Please enter a valid number!</p>
+      <div class="weight-converter__results hidden">
+        <div class="weight-converter__card weight-converter__card--grams">
+          <h4 class="weight-converter__card-title">Grams:</h4>
+          <p class="weight-converter__card-value" id="grams-output"></p>
+        </div>
+        <div class="weight-converter__card weight-converter__card--kg">
+          <h4 class="weight-converter__card-title">Kilograms:</h4>
+          <p class="weight-converter__card-value" id="kg-output"></p>
+        </div>
+        <div class="weight-converter__card weight-converter__card--oz">
+          <h4 class="weight-converter__card-title">Ounces:</h4>
+          <p class="weight-converter__card-value" id="oz-output"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
