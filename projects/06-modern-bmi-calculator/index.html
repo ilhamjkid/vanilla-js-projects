@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+  <title>Modern BMI Calculator</title>
+</head>
+
+<body>
+  <main>
+    <section class="bmi-calculator">
+      <h2 class="bmi-calculator__title">Body Mass Index (BMI) Calculator</h2>
+      <p class="bmi-calculator__alert bmi-calculator__alert--hidden"></p>
+      <form class="bmi-calculator__form">
+        <div class="bmi-calculator__field">
+          <label for="height" class="bmi-calculator__label">Your Height (cm):</label>
+          <input type="number" id="height" class="bmi-calculator__input" step="any">
+        </div>
+        <div class="bmi-calculator__field">
+          <label for="weight" class="bmi-calculator__label">Your Weight (kg):</label>
+          <input type="number" id="weight" class="bmi-calculator__input" step="any">
+        </div>
+        <button type="submit" class="bmi-calculator__submit-btn">Compute BMI</button>
+        <p class="bmi-calculator__result">
+          Your BMI: <output id="result" for="height weight">--</output>
+        </p>
+      </form>
+      <p class="bmi-calculator__category">
+        Weight Category: <span id="category" aria-live="polite">--</span>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
