@@ -13,7 +13,7 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 03  | [Blur Pop-Up Window](./projects/03-blur-pop-up-window/)                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/03-blur-pop-up-window/)         |
 | 04  | [Simple Weight Converter App](./projects/04-simple-weight-converter-app/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/04-simple-weight-converter-app) |
 | 05  | [Button Ripple Effect](./projects/05-button-ripple-effect/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/05-button-ripple-effect)        |
-| 06  | Modern BMI Calculator                                                     | ⏳ Upcoming  | -                                                                                                    |
+| 06  | [Modern BMI Calculator](./projects/06-modern-bmi-calculator/)             | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/06-modern-bmi-calculator)       |
 | 07  | Scrolling Background Effect                                               | ⏳ Upcoming  | -                                                                                                    |
 
 ---
