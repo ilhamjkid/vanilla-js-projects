@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-main: "Poppins", sans-serif;
+  --text-main: black;
+  --text-on-accent: white;
+  --bg-body: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-main);
+}
+.container {
+  width: 100%;
+  max-width: 420px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero {
+  color: var(--text-on-accent);
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero .container {
+  justify-content: center;
+}
+.hero__background {
+  width: 100%;
+  height: 100vh;
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 50, 0.5) 0%,
+      rgba(0, 0, 100, 0.5) 50%,
+      rgba(0, 0, 150, 0.5) 100%
+    ),
+    url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+  z-index: -10;
+  scale: 1;
+  will-change: transform;
+}
+.hero__title {
+  font-size: 2.4rem;
+}
+.hero__desc {
+  font-size: 1.2rem;
+}
+
+.about-us {
+  width: 100%;
+  min-height: 100vh;
+}
+.about-us .container {
+  justify-content: flex-start;
+}
+.about-us__title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.about-us__desc {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .hero__title {
+    font-size: 2.6rem;
+  }
+  .hero__desc {
+    font-size: 1.4rem;
+  }
+
+  .about-us__title {
+    font-size: 1.8rem;
+  }
+  .about-us__desc {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 920px;
+  }
+
+  .hero__title {
+    font-size: 2.8rem;
+  }
+  .hero__desc {
+    font-size: 1.6rem;
+  }
+
+  .about-us__title {
+    font-size: 2rem;
+  }
+  .about-us__desc {
+    font-size: 1.4rem;
+  }
+}

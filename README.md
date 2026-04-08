@@ -14,7 +14,10 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 04  | [Simple Weight Converter App](./projects/04-simple-weight-converter-app/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/04-simple-weight-converter-app) |
 | 05  | [Button Ripple Effect](./projects/05-button-ripple-effect/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/05-button-ripple-effect)        |
 | 06  | [Modern BMI Calculator](./projects/06-modern-bmi-calculator/)             | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/06-modern-bmi-calculator)       |
-| 07  | Scrolling Background Effect                                               | ⏳ Upcoming  | -                                                                                                    |
+| 07  | [Scrolling Background Effect](./projects/07-scrolling-background-effect/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/07-scrolling-background-effect) |
+| 08  | Dynamic Auto Typing Effect                                                | ⏳ Upcoming  | -                                                                                                    |
+| 09  | Video Background Website                                                  | ⏳ Upcoming  | -                                                                                                    |
+| 10  | Age Calculator                                                            | ⏳ Upcoming  | -                                                                                                    |
 
 ---
 
