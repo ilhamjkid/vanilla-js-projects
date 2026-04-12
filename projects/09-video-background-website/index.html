@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+  <title>Video Background Website</title>
+</head>
+
+<body>
+  <main>
+    <section class="hero">
+      <video class="hero__background" poster="./assets/background.png" autoplay muted loop>
+        <source src="./assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="container">
+        <h2 class="hero__title">Indonesia <span class="no-break">Tanah Airku</span></h2>
+        <button class="hero__btn" aria-label="Toggle Play/Pause">
+          <span class="hidden" id="play"><i class="fa-solid fa-play"></i></span>
+          <span id="pause"><i class="fa-solid fa-pause"></i></span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
