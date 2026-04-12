@@ -16,7 +16,7 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 06  | [Modern BMI Calculator](./projects/06-modern-bmi-calculator/)             | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/06-modern-bmi-calculator)       |
 | 07  | [Scrolling Background Effect](./projects/07-scrolling-background-effect/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/07-scrolling-background-effect) |
 | 08  | [Dynamic Auto Typing Effect](./projects/08-dynamic-auto-typing-effect/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/08-dynamic-auto-typing-effect)  |
-| 09  | Video Background Website                                                  | ⏳ Upcoming  | -                                                                                                    |
+| 09  | [Video Background Website](./projects/09-video-background-website/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/09-video-background-website)    |
 | 10  | Age Calculator                                                            | ⏳ Upcoming  | -                                                                                                    |
 
 ---
