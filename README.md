@@ -18,7 +18,7 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 08  | [Dynamic Auto Typing Effect](./projects/08-dynamic-auto-typing-effect/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/08-dynamic-auto-typing-effect)  |
 | 09  | [Video Background Website](./projects/09-video-background-website/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/09-video-background-website)    |
 | 10  | [Age Calculator](./projects/10-age-calculator/)                           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/10-age-calculator)              |
-| 11  | Stunning Testimonial Slider                                               | ⏳ Upcoming  | -                                                                                                    |
+| 11  | [Stunning Testimonial Slider](./projects/11-stunning-testimonial-slider/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/11-stunning-testimonial-slider) |
 | 12  | Image Slider                                                              | ⏳ Upcoming  | -                                                                                                    |
 
 ---
