@@ -19,7 +19,10 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 09  | [Video Background Website](./projects/09-video-background-website/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/09-video-background-website)    |
 | 10  | [Age Calculator](./projects/10-age-calculator/)                           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/10-age-calculator)              |
 | 11  | [Stunning Testimonial Slider](./projects/11-stunning-testimonial-slider/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/11-stunning-testimonial-slider) |
-| 12  | Image Slider                                                              | ⏳ Upcoming  | -                                                                                                    |
+| 12  | [Image Slider](./projects/12-image-slider/)                               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/12-image-slider)                |
+| 13  | Dynamic Random Image Gallery                                              | ⏳ Upcoming  | -                                                                                                    |
+| 14  | Live New Year Countdown Timer                                             | ⏳ Upcoming  | -                                                                                                    |
+| 15  | Realistic Analog Clock                                                    | ⏳ Upcoming  | -                                                                                                    |
 
 ---
 

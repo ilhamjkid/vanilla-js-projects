@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="main.js" defer></script>
+  <title>Image Slider</title>
+</head>
+
+<body>
+  <main>
+    <section class="image-slider">
+      <div class="container">
+        <h2 class="image-slider__title">Image Slider</h2>
+        <div class="image-slider__container">
+          <div class="image-slider__wrapper">
+            <div class="image-slider__item">
+              <img src="./assets/nature-001.jpg" alt="Nature 001">
+            </div>
+            <div class="image-slider__item">
+              <img src="./assets/nature-002.jpg" alt="Nature 002">
+            </div>
+            <div class="image-slider__item">
+              <img src="./assets/nature-003.jpg" alt="Nature 003">
+            </div>
+            <div class="image-slider__item">
+              <img src="./assets/nature-004.jpg" alt="Nature 004">
+            </div>
+          </div>
+          <div class="image-slider__button">
+            <button type="button" class="image-slider__button--prev" aria-label="Previous Image">
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="image-slider__button--next" aria-label="Next Image">
+              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
