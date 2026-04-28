@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --ink-black: #011627;
+  --porcelain: #fdfffc;
+
+  --font-main: "Roboto", sans-serif;
+  --text-main: var(--porcelain);
+  --bg-body: var(--ink-black);
+  --bd-slide-container: var(--porcelain);
+  --bg-slide-button: var(--ink-black);
+  --sd-slide-button: rgba(253, 255, 252, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  width: 100%;
+  min-height: 100vh;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.image-slider__title {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.image-slider__container {
+  width: 100%;
+  margin: 0 auto;
+  border: 4px solid var(--bd-slide-container);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.image-slider__wrapper {
+  display: flex;
+}
+.image-slider__item {
+  width: 100%;
+  flex-shrink: 0;
+}
+.image-slider__item img {
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+.image-slider__button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.image-slider__button button {
+  background-color: var(--bg-slide-button);
+  color: var(--text-main);
+  font-size: 1.6rem;
+  padding: 8px 4px;
+  opacity: 0.4;
+}
+.image-slider__button button:hover,
+.image-slider__button button:active {
+  opacity: 0.8;
+}
+.image-slider__button button:focus {
+  box-shadow: 0 0 2px 2px var(--sd-slide-button);
+  opacity: 0.8;
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 640px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .image-slider__container {
+    border-width: 6px;
+  }
+  .image-slider__title {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+  }
+  .image-slider__item img {
+    height: 320px;
+  }
+  .image-slider__button button {
+    font-size: 2rem;
+    padding: 10px 6px;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 860px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .image-slider__container {
+    width: 90%;
+  }
+  .image-slider__item img {
+    height: 440px;
+  }
+}
