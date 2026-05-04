@@ -6,23 +6,23 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 
 ## 📌 Project Roadmap
 
-| No  | Project Name                                                                | Status       | Live Demo                                                                                             |
-| --- | --------------------------------------------------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------- |
-| 01  | [Random Password Generator](./projects/01-random-password-generator/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/)   |
-| 02  | [Sleek Dark Mode Toggle](./projects/02-sleek-dark-mode-toggle/)             | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/02-sleek-dark-mode-toggle/)      |
-| 03  | [Blur Pop-Up Window](./projects/03-blur-pop-up-window/)                     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/03-blur-pop-up-window/)          |
-| 04  | [Simple Weight Converter App](./projects/04-simple-weight-converter-app/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/04-simple-weight-converter-app)  |
-| 05  | [Button Ripple Effect](./projects/05-button-ripple-effect/)                 | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/05-button-ripple-effect)         |
-| 06  | [Modern BMI Calculator](./projects/06-modern-bmi-calculator/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/06-modern-bmi-calculator)        |
-| 07  | [Scrolling Background Effect](./projects/07-scrolling-background-effect/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/07-scrolling-background-effect)  |
-| 08  | [Dynamic Auto Typing Effect](./projects/08-dynamic-auto-typing-effect/)     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/08-dynamic-auto-typing-effect)   |
-| 09  | [Video Background Website](./projects/09-video-background-website/)         | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/09-video-background-website)     |
-| 10  | [Age Calculator](./projects/10-age-calculator/)                             | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/10-age-calculator)               |
-| 11  | [Stunning Testimonial Slider](./projects/11-stunning-testimonial-slider/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/11-stunning-testimonial-slider)  |
-| 12  | [Image Slider](./projects/12-image-slider/)                                 | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/12-image-slider)                 |
-| 13  | [Dynamic Random Image Gallery](./projects/13-dynamic-random-image-gallery/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/13-dynamic-random-image-gallery) |
-| 14  | Live New Year Countdown Timer                                               | ⏳ Upcoming  | -                                                                                                     |
-| 15  | Realistic Analog Clock                                                      | ⏳ Upcoming  | -                                                                                                     |
+| No  | Project Name                                                                  | Status       | Live Demo                                                                                              |
+| --- | ----------------------------------------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------ |
+| 01  | [Random Password Generator](./projects/01-random-password-generator/)         | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/01-random-password-generator/)    |
+| 02  | [Sleek Dark Mode Toggle](./projects/02-sleek-dark-mode-toggle/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/02-sleek-dark-mode-toggle/)       |
+| 03  | [Blur Pop-Up Window](./projects/03-blur-pop-up-window/)                       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/03-blur-pop-up-window/)           |
+| 04  | [Simple Weight Converter App](./projects/04-simple-weight-converter-app/)     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/04-simple-weight-converter-app)   |
+| 05  | [Button Ripple Effect](./projects/05-button-ripple-effect/)                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/05-button-ripple-effect)          |
+| 06  | [Modern BMI Calculator](./projects/06-modern-bmi-calculator/)                 | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/06-modern-bmi-calculator)         |
+| 07  | [Scrolling Background Effect](./projects/07-scrolling-background-effect/)     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/07-scrolling-background-effect)   |
+| 08  | [Dynamic Auto Typing Effect](./projects/08-dynamic-auto-typing-effect/)       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/08-dynamic-auto-typing-effect)    |
+| 09  | [Video Background Website](./projects/09-video-background-website/)           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/09-video-background-website)      |
+| 10  | [Age Calculator](./projects/10-age-calculator/)                               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/10-age-calculator)                |
+| 11  | [Stunning Testimonial Slider](./projects/11-stunning-testimonial-slider/)     | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/11-stunning-testimonial-slider)   |
+| 12  | [Image Slider](./projects/12-image-slider/)                                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/12-image-slider)                  |
+| 13  | [Dynamic Random Image Gallery](./projects/13-dynamic-random-image-gallery/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/13-dynamic-random-image-gallery)  |
+| 14  | [Live New Year Countdown Timer](./projects/14-live-new-year-countdown-timer/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/14-live-new-year-countdown-timer) |
+| 15  | Realistic Analog Clock                                                        | ⏳ Upcoming  | -                                                                                                      |
 
 ---
 

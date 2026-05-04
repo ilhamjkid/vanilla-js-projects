@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+  <title>Live New Year Countdown Timer</title>
+</head>
+
+<body>
+  <main>
+    <section class="countdown">
+      <div class="countdown__overlay"></div>
+      <div class="container">
+        <div class="countdown__alert glassmorphism hidden">
+          <h2 class="countdown__title">
+            HAPPY <span class="no-break">NEW YEAR</span>
+          </h2>
+          <p class="countdown__message">
+            You can refresh the page to start a new countdown for next year.
+          </p>
+        </div>
+        <div class="countdown__card glassmorphism">
+          <h2 class="countdown__title">
+            Countdown To <span class="no-break">New Year</span>
+          </h2>
+          <h3 class="countdown__year">0000</h3>
+          <div class="countdown__timer" aria-live="polite">
+            <div class="countdown__unit" id="days">
+              <p class="countdown__unit--time">00</p>
+              <p class="countdown__unit--name">Days</p>
+            </div>
+            <div class="countdown__unit" id="hours">
+              <p class="countdown__unit--time">00</p>
+              <p class="countdown__unit--name">Hours</p>
+            </div>
+            <div class="countdown__unit" id="minutes">
+              <p class="countdown__unit--time">00</p>
+              <p class="countdown__unit--name">Minutes</p>
+            </div>
+            <div class="countdown__unit" id="seconds">
+              <p class="countdown__unit--time">00</p>
+              <p class="countdown__unit--name">Seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
