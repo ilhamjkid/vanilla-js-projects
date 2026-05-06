@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --shadow-grey: #1c232e;
+  --ink-black: #11151c;
+  --ghost-white: #f7f7ff;
+  --flag-red: #db162f;
+
+  --font-main: "Poppins", sans-serif;
+  --text-main: var(--ghost-white);
+  --bg-body: var(--shadow-grey);
+  --bg-clock-face: var(--ink-black);
+  --bg-center: var(--shadow-grey);
+  --bg-hand-primary: var(--ghost-white);
+  --bg-hand-secondary: var(--flag-red);
+  --border-clock-face: var(--ghost-white);
+  --shadow-clock-face: rgba(17, 21, 28, 0.4);
+}
+.analog-clock__hand--hour {
+  --rotation: 90deg;
+}
+.analog-clock__hand--minute {
+  --rotation: 30deg;
+}
+.analog-clock__hand--second {
+  --rotation: 0deg;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.analog-clock {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analog-clock__face {
+  background-color: var(--bg-clock-face);
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid var(--border-clock-face);
+  box-shadow: 0 0 4px 4px var(--shadow-clock-face);
+  position: relative;
+}
+.analog-clock__hand {
+  background-color: var(--bg-hand-primary);
+  width: 4px;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: 50% 85%;
+  transform: translate(-50%, 15%) rotate(var(--rotation));
+}
+.analog-clock__hand--hour {
+  height: 95px;
+}
+.analog-clock__hand--minute {
+  height: 110px;
+}
+.analog-clock__hand--second {
+  background-color: var(--bg-hand-secondary);
+  height: 125px;
+}
+.analog-clock__center {
+  background-color: var(--bg-center);
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.analog-clock__number-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+}
+.analog-clock__number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .analog-clock__face {
+    width: 360px;
+    height: 360px;
+    border-width: 6px;
+  }
+  .analog-clock__hand {
+    width: 6px;
+  }
+  .analog-clock__hand--hour {
+    height: 120px;
+  }
+  .analog-clock__hand--minute {
+    height: 140px;
+  }
+  .analog-clock__hand--second {
+    height: 160px;
+  }
+  .analog-clock__center {
+    width: 24px;
+    height: 24px;
+  }
+  .analog-clock__number {
+    font-size: 1.4rem;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 860px;
+  }
+
+  .analog-clock__face {
+    width: 440px;
+    height: 440px;
+    border-width: 8px;
+  }
+  .analog-clock__hand {
+    width: 8px;
+  }
+  .analog-clock__hand--hour {
+    height: 150px;
+  }
+  .analog-clock__hand--minute {
+    height: 175px;
+  }
+  .analog-clock__hand--second {
+    height: 200px;
+  }
+  .analog-clock__center {
+    width: 32px;
+    height: 32px;
+  }
+  .analog-clock__number {
+    font-size: 1.8rem;
+  }
+}
