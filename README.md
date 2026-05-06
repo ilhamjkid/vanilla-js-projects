@@ -22,7 +22,9 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 12  | [Image Slider](./projects/12-image-slider/)                                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/12-image-slider)                  |
 | 13  | [Dynamic Random Image Gallery](./projects/13-dynamic-random-image-gallery/)   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/13-dynamic-random-image-gallery)  |
 | 14  | [Live New Year Countdown Timer](./projects/14-live-new-year-countdown-timer/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/14-live-new-year-countdown-timer) |
-| 15  | Realistic Analog Clock                                                        | ⏳ Upcoming  | -                                                                                                      |
+| 15  | [Realistic Analog Clock](./projects/15-realistic-analog-clock/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/15-realistic-analog-clock)        |
+| 16  | Rock Paper Scissors Game                                                      | ⏳ Upcoming  | -                                                                                                      |
+| 17  | Calculator                                                                    | ⏳ Upcoming  | -                                                                                                      |
 
 ---
 
