@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --ink-black: #02040f;
+  --mahogany-red: #b3001b;
+  --azure-blue: #3f84e5;
+  --sea-green: #0a8754;
+  --icy-blue: #b8d4ff;
+  --prussian-blue: #142745;
+
+  --font-main: "Poppins", sans-serif;
+  --text-main: white;
+  --text-reset: white;
+  --text-alert: var(--prussian-blue);
+  --bg-body: var(--ink-black);
+  --bg-alert: var(--icy-blue);
+  --bg-rock: var(--mahogany-red);
+  --bg-paper: var(--azure-blue);
+  --bg-scissors: var(--sea-green);
+  --bg-reset: var(--ink-black);
+  --border-reset: white;
+  --shadow-rock: rgba(179, 0, 27, 0.4);
+  --shadow-paper: rgba(63, 132, 229, 0.4);
+  --shadow-scissors: rgba(10, 135, 84, 0.4);
+  --shadow-reset: rgba(127, 130, 150, 0.4);
+
+  --fs-extra-large: clamp(2.8rem, 5vw, 3.2rem);
+  --fs-large: clamp(2rem, 4vw, 2.4rem);
+  --fs-medium: clamp(1.6rem, 3vw, 2rem);
+  --fs-small: clamp(1.4rem, 2.5vw, 1.6rem);
+  --fs-extra-small: clamp(1.2rem, 2vw, 1.4rem);
+  --mg-b-medium: clamp(20px, 3vw, 30px);
+}
+.rps-game__btn-reset:hover {
+  --text-reset: var(--ink-black);
+  --bg-reset: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  width: 100%;
+  min-height: 100vh;
+}
+button {
+  font-family: var(--font-main);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  width: clamp(420px, 80vw, 860px);
+  padding: clamp(20px, 4vw, 40px) 20px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none !important;
+}
+
+.rps-game__title {
+  font-size: var(--fs-large);
+  text-align: center;
+  margin-bottom: var(--mg-b-medium);
+}
+.rps-game__choice {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  margin-bottom: var(--mg-b-medium);
+}
+.rps-game__choice-btn {
+  color: var(--text-main);
+  font-size: var(--fs-extra-large);
+  width: clamp(80px, 10vw, 100px);
+  height: clamp(80px, 10vw, 100px);
+  padding: 10px;
+  border-radius: 10px;
+}
+.rps-game__choice-btn--rock {
+  background-color: var(--bg-rock);
+}
+.rps-game__choice-btn--paper {
+  background-color: var(--bg-paper);
+}
+.rps-game__choice-btn--scissors {
+  background-color: var(--bg-scissors);
+}
+.rps-game__choice-btn--rock:focus {
+  box-shadow: 0 0 0 4px var(--shadow-rock);
+}
+.rps-game__choice-btn--paper:focus {
+  box-shadow: 0 0 0 4px var(--shadow-paper);
+}
+.rps-game__choice-btn--scissors:focus {
+  box-shadow: 0 0 0 4px var(--shadow-scissors);
+}
+.rps-game__choice-btn--rock.chose,
+.rps-game__choice-btn--paper.chose,
+.rps-game__choice-btn--scissors.chose {
+  opacity: 0.5;
+}
+.rps-game__score {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-areas:
+    "... ... ..."
+    "... ... ..."
+    "button button button";
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1vw, 10px) clamp(10px, 1.5vw, 15px);
+  margin-bottom: var(--mg-b-medium);
+}
+.rps-game__score-icon {
+  font-size: var(--fs-medium);
+  text-align: center;
+}
+.rps-game__score-label {
+  font-size: var(--fs-small);
+}
+.rps-game__score-number {
+  font-size: var(--fs-small);
+  font-weight: 600;
+}
+.rps-game__score-btn {
+  grid-area: button;
+  padding-top: clamp(5px, 1vw, 10px);
+}
+.rps-game__btn-reset {
+  background-color: var(--bg-reset);
+  color: var(--text-reset);
+  font-size: var(--fs-extra-small);
+  font-weight: 600;
+  display: block;
+  padding: clamp(8px, 1vw, 10px) clamp(16px, 2vw, 20px);
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px solid var(--border-reset);
+}
+.rps-game__btn-reset:focus {
+  box-shadow: 0 0 0 4px var(--shadow-reset);
+}
+.rps-game__feedback {
+  margin-bottom: var(--mg-b-medium);
+}
+.rps-game__feedback-message {
+  font-size: var(--fs-extra-small);
+  text-align: center;
+}
+.rps-game__alert {
+  background-color: var(--bg-alert);
+  padding: clamp(8px, 1vw, 12px);
+  border-radius: 10px;
+}
+.rps-game__alert-message {
+  color: var(--text-alert);
+  font-size: var(--fs-extra-small);
+  font-weight: 600;
+  text-align: center;
+}
