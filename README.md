@@ -24,7 +24,10 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 14  | [Live New Year Countdown Timer](./projects/14-live-new-year-countdown-timer/) | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/14-live-new-year-countdown-timer) |
 | 15  | [Realistic Analog Clock](./projects/15-realistic-analog-clock/)               | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/15-realistic-analog-clock)        |
 | 16  | [Rock Paper Scissors Game](./projects/16-rock-paper-scissors-game/)           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/16-rock-paper-scissors-game)      |
-| 17  | Calculator                                                                    | ⏳ Upcoming  | -                                                                                                      |
+| 17  | [Calculator](./projects/17-calculator/)                                       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/17-calculator)                    |
+| 18  | Anime Pics Generator                                                          | ⏳ Upcoming  | -                                                                                                      |
+| 19  | Currency Converter                                                            | ⏳ Upcoming  | -                                                                                                      |
+| 20  | To Do List                                                                    | ⏳ Upcoming  | -                                                                                                      |
 
 ---
 
