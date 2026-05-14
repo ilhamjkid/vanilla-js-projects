@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* Variables */
+:root {
+  --ghost-white: #f0eff4;
+  --midnight-violet: #0d0221;
+  --deep-twilight: #0f084b;
+  --french-blue: #26408b;
+  --prussian-blue: #010b27;
+  --steel-blue: #3581b8;
+  --dim-grey: #61606b;
+
+  --font-main: "Open Sans", sans-serif;
+  --text-main: var(--ghost-white);
+  --text-link: var(--steel-blue);
+  --bg-body: linear-gradient(
+    90deg,
+    var(--midnight-violet) 0%,
+    var(--deep-twilight) 50%,
+    var(--french-blue) 100%
+  );
+  --bg-card: var(--prussian-blue);
+  --bg-button: var(--steel-blue);
+  --bg-button-disabled: var(--dim-grey);
+  --bg-loading: var(--prussian-blue);
+  --border-image: var(--steel-blue);
+  --border-load-animation: var(--steel-blue);
+  --border-load-animation-r: var(--prussian-blue);
+  --shadow-card: #00040f99;
+  --shadow-button: #26408b66;
+  --shadow-link: #26408b66;
+}
+
+/* Reset & Utils */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  width: 100%;
+  min-height: 100vh;
+}
+button:hover,
+a:hover {
+  opacity: 0.6;
+}
+.container {
+  width: 100%;
+  max-width: clamp(420px, 80vw, 860px);
+  padding: clamp(20px, 3vw, 30px) 20px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none !important;
+}
+
+/* Main */
+.generator__card {
+  background: var(--bg-card);
+  text-align: center;
+  width: 100%;
+  max-width: clamp(360px, 50vw, 540px);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: -6px 6px 6px var(--shadow-card);
+}
+.generator__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.generator__btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.generator__generate-btn {
+  background: var(--steel-blue);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.generator__generate-btn:disabled {
+  background: var(--bg-button-disabled);
+  cursor: not-allowed;
+}
+.generator__generate-btn:focus {
+  box-shadow: 0 0 0 4px var(--shadow-button);
+}
+.generator__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.generator__image-wrapper {
+  width: clamp(240px, 40vw, 320px);
+  height: clamp(240px, 40vw, 320px);
+  border-radius: 50%;
+  border: 6px solid var(--border-image);
+  overflow: hidden;
+  position: relative;
+}
+.generator__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.generator__info-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.generator__artist-name {
+  font-size: 1.2rem;
+}
+.generator__artist-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.generator__artist-link a {
+  color: var(--text-link);
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+.generator__artist-link a:focus {
+  box-shadow: 0 0 0 4px var(--shadow-link);
+}
+
+/* Loading */
+.generator__image-loading {
+  background: var(--bg-loading);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+}
+.generator__image-loading span {
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+  border: 4px solid var(--border-load-animation);
+  border-right: 4px solid var(--border-load-animation-r);
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+.generator__info-loading {
+  background: var(--bg-loading);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.generator__info-loading span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

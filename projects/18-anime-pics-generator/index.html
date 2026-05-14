@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="main.js" defer></script>
+  <title>Anime Pics Generator</title>
+</head>
+
+<body>
+  <main>
+    <section class="generator">
+      <div class="container">
+        <div class="generator__card">
+          <h2 class="generator__title">Anime Pics Generator</h2>
+          <div class="generator__btn-group">
+            <button class="generator__generate-btn" data-endpoint="waifu">Get Waifu</button>
+            <button class="generator__generate-btn" data-endpoint="husbando">Get Husbando</button>
+          </div>
+          <div class="generator__content hidden">
+            <div class="generator__image-wrapper">
+              <img class="generator__image" src="" alt="">
+              <div class="generator__image-loading hidden">
+                <span></span>
+              </div>
+            </div>
+            <div class="generator__info-group">
+              <h3 class="generator__artist-name"></h3>
+              <p class="generator__artist-link">
+                <a href="" target="_blank" rel="noopener noreferrer">
+                  Artist Link
+                </a>
+              </p>
+              <div class="generator__info-loading hidden">
+                <span>Updating...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
