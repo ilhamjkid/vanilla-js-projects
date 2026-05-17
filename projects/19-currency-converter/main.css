@@ -1,0 +1,132 @@
+:root {
+  --ghost-white: #fafaff;
+  --ink-black: #0a091b;
+  --shadow-grey: #191827;
+  --full-spectrum-blue: #004fff;
+
+  --font-main: monospace;
+  --text-main: var(--ghost-white);
+  --text-amount: var(--ink-black);
+  --bg-body: var(--shadow-grey);
+  --bg-card: var(--ink-black);
+  --bg-currency: var(--full-spectrum-blue);
+  --bg-amount: var(--ghost-white);
+  --bg-loading: var(--ink-black);
+  --border-loading-animation: var(--full-spectrum-blue);
+  --shadow-card: rgba(0, 0, 15, 0.8);
+  --shadow-field: rgba(30, 95, 235, 0.4);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-body);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  width: 100%;
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: clamp(420px, 80vw, 860px);
+  padding: 20px;
+}
+.hidden {
+  display: none !important;
+}
+
+.converter {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.converter__card {
+  background: var(--bg-card);
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: -6px 6px 6px var(--shadow-card);
+}
+.converter__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.converter__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.converter__field {
+  font-family: var(--font-main);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.converter__field:focus {
+  box-shadow: 0 0 0 4px var(--shadow-field);
+}
+.converter__field--currency {
+  background: var(--bg-currency);
+  color: var(--text-main);
+}
+.converter__field--amount {
+  background: var(--bg-amount);
+  color: var(--text-amount);
+  width: 100%;
+}
+.converter__exchange-rate,
+.converter__alert {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.loading {
+  background: var(--bg-loading);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+.loading__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.loading__title {
+  font-size: 2rem;
+  text-align: center;
+}
+.loading__animation {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid var(--border-loading-animation);
+  border-right: 4px solid transparent;
+  animation: loading 2s linear infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

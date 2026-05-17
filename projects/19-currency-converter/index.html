@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="main.js" defer></script>
+  <title>Currency Converter</title>
+</head>
+
+<body>
+  <main>
+    <section class="converter">
+      <div class="container">
+        <div class="converter__card">
+          <h2 class="converter__title">Currency Converter</h2>
+          <div class="converter__group">
+            <select class="converter__field converter__field--currency" id="currency-top"></select>
+            <input type="number" class="converter__field converter__field--amount" id="amount-top" min="0">
+          </div>
+          <div class="converter__group">
+            <select class="converter__field converter__field--currency" id="currency-bottom"></select>
+            <input type="number" class="converter__field converter__field--amount" id="amount-bottom" min="0">
+          </div>
+          <p class="converter__exchange-rate hidden"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="loading">
+    <div class="container">
+      <div class="loading__wrapper">
+        <div class="loading__animation"></div>
+        <h2 class="loading__title">Loading...</h2>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

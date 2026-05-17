@@ -26,7 +26,7 @@ The goal of this repository is to move beyond basic tutorials and implement indu
 | 16  | [Rock Paper Scissors Game](./projects/16-rock-paper-scissors-game/)           | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/16-rock-paper-scissors-game)      |
 | 17  | [Calculator](./projects/17-calculator/)                                       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/17-calculator)                    |
 | 18  | [Anime Pics Generator](./projects/18-anime-pics-generator/)                   | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/18-anime-pics-generator)          |
-| 19  | Currency Converter                                                            | ⏳ Upcoming  | -                                                                                                      |
+| 19  | [Currency Converter](./projects/19-currency-converter/)                       | ✅ Completed | [View Demo](https://ilhamjkid.github.io/vanilla-js-projects/projects/19-currency-converter)            |
 | 20  | To Do List                                                                    | ⏳ Upcoming  | -                                                                                                      |
 
 ---
