@@ -4,110 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="main.js" defer></script>
   <title>Vanilla JavaScript Projects</title>
 </head>
 
 <body>
-  <h2>
-    <a href="./projects/01-random-password-generator/" target="_blank" rel="noopener noreferrer">
-      Random Password Generator
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/02-sleek-dark-mode-toggle/" target="_blank" rel="noopener noreferrer">
-      Sleek Dark Mode Toggle
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/03-blur-pop-up-window/" target="_blank" rel="noopener noreferrer">
-      Blur Pop-Up Window
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/04-simple-weight-converter-app/" target="_blank" rel="noopener noreferrer">
-      Simple Weight Converter App
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/05-button-ripple-effect/" target="_blank" rel="noopener noreferrer">
-      Button Ripple Effect
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/06-modern-bmi-calculator/" target="_blank" rel="noopener noreferrer">
-      Modern BMI Calculator
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/07-scrolling-background-effect/" target="_blank" rel="noopener noreferrer">
-      Scrolling Background Effect
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/08-dynamic-auto-typing-effect/" target="_blank" rel="noopener noreferrer">
-      Dynamic Auto Typing Effect
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/09-video-background-website/" target="_blank" rel="noopener noreferrer">
-      Video Background Website
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/10-age-calculator/" target="_blank" rel="noopener noreferrer">
-      Age Calculator
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/11-stunning-testimonial-slider/" target="_blank" rel="noopener noreferrer">
-      Stunning Testimonial Slider
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/12-image-slider/" target="_blank" rel="noopener noreferrer">
-      Image Slider
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/13-dynamic-random-image-gallery/" target="_blank" rel="noopener noreferrer">
-      Dynamic Random Image Gallery
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/14-live-new-year-countdown-timer/" target="_blank" rel="noopener noreferrer">
-      Live New Year Countdown Timer
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/15-realistic-analog-clock/" target="_blank" rel="noopener noreferrer">
-      Realistic Analog Clock
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/16-rock-paper-scissors-game/" target="_blank" rel="noopener noreferrer">
-      Rock Paper Scissors Game
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/17-calculator/" target="_blank" rel="noopener noreferrer">
-      Calculator
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/18-anime-pics-generator/" target="_blank" rel="noopener noreferrer">
-      Anime Pics Generator
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/19-currency-converter/" target="_blank" rel="noopener noreferrer">
-      Currency Converter
-    </a>
-  </h2>
-  <h2>
-    <a href="./projects/20-todo-list/" target="_blank" rel="noopener noreferrer">
-      To-Do List
-    </a>
-  </h2>
+  <main>
+    <section class="project-collection">
+      <div class="container">
+        <h2 class="project-collection__title">Vanilla JS Projects</h2>
+        <p class="project-collection__desc">
+          <span>A curated collection of 20 web projects designed to master Front-End Development fundamentals through
+            hands-on, project-based learning.</span>
+          <span>The goal of this repository is to move beyond basic tutorials and implement industry-standard practices
+            in every build.</span>
+        </p>
+        <hr>
+        <div class="project-collection__project-list"></div>
+        <hr>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <h4 class="footer__message">
+        <span>Made with ❤ by</span>
+        <a href="http://github.com/ilhamjkid" target="_blank" rel="noopener noreferrer">Ilham JK</a>
+      </h4>
+    </div>
+  </footer>
+  <div class="loading">
+    <div class="loading__animation"></div>
+    <div class="loading__message">Loading...</div>
+  </div>
 </body>
 
 </html>
